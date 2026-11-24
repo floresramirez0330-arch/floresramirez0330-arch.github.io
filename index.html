@@ -104,24 +104,34 @@
         <section id="contacto">
             <h2>Contacto</h2>
             <form class="contacto-form" action="https://formspree.io/f/xppdobqz" method="POST">
-                <!-- Elemento 1: input -->
+                 <!-- Elemento 1: input -->
                 <label for="nombre">Nombre completo:</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
 
-                <!-- Elemento 2: select -->
+                <!-- Elemento 2: select (Tipo de entrada) -->
                 <label for="asunto">Tipo de entrada o consulta:</label>
                 <select id="asunto" name="asunto" required>
                     <option value="">Selecciona una opción</option>
                     <option value="general">Entrada General ($600 MXN)</option>
                     <option value="vip">Zona Ruedo / VIP ($5,760 MXN)</option>
-                    <option value="artistas">Información de los artistas</option>
+                    <option value="horarios">Horarios y presentación de artistas</option>
                 </select>
 
-                <!-- Elemento 3: textarea -->
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                <!-- Elemento 3: select (Artista principal de interés) -->
+                <label for="artista">¿A qué artista vienes a ver principalmente?</label>
+                <select id="artista" name="artista" required>
+                    <option value="">Selecciona un artista</option>
+                    <option value="Reik">Reik</option>
+                    <option value="Keith-Urban">Keith Urban</option>
+                    <option value="Calibre 50">Calibre 50</option>
+                    <option value="todos">Todos los artistas</option>
+                </select>
 
-                <button type="submit">Enviar mensaje</button>
+                <!-- Elemento 4: textarea -->
+                <label for="mensaje">Mensaje o solicitud especial:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Indica cantidad de boletos, método de pago o dudas..." required></textarea>
+
+                <button type="submit">Enviar solicitud</button>
             </form>
         </section>
     </main>
